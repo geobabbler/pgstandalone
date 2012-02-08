@@ -1,0 +1,11 @@
+@ECHO OFF
+ECHO @ECHO OFF>"%~1\pg_standalone.bat"
+ECHO REM This file was automatically generated >> "%~1\pg_standalone.bat"
+ECHO REM This script sets environment variables helpful for PostgreSQL >> "%~1\pg_standalone.bat"
+ECHO @SET PATH="%~1\bin";%%PATH%%>>"%~1\pg_standalone.bat"
+ECHO @SET PGDATA=%~1\data>>"%~1\pg_standalone.bat"
+ECHO @SET PGDATABASE=postgres>>"%~1\pg_standalone.bat"
+ECHO @SET PGUSER=postgres>>"%~1\pg_standalone.bat"
+ECHO @SET PGPORT=54325>>"%~1\pg_standalone.bat"
+ECHO @SET PGLOCALEDIR=%~1\share\locale>>"%~1\pg_standalone.bat"
+ECHO CALL "%~1\bin\postgres.exe">>"%~1\pg_standalone.bat"
